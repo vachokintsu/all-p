@@ -60,7 +60,9 @@ body {
     background-color: #303030;
 }
 .header {
-    max-width: 1200px;
+    max-width: 1160px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin: 0 auto;
     z-index: 5;
 }
@@ -257,9 +259,12 @@ body {
     padding-right: 20px;
 }
 .slider-dot {
-    max-width: 1200px;
+    max-width: 1160px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
 }
 .slider-dot ul {
     margin-left: 0px !important;
@@ -281,7 +286,9 @@ body {
     padding-bottom: 40px;
 }
 .product {
-    max-width: 1200px;
+    max-width: 1160px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin: 0 auto;
 }
 .product-list {
@@ -431,7 +438,9 @@ body {
     margin-top: -20px;
 }
 .number-block {
-    max-width: 1200px;
+    max-width: 1160px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin: 0 auto;
     padding-top: 15px;
 }
@@ -491,7 +500,11 @@ body {
     padding: 0px 15px 0px 0px !important;
     margin: 0px 0px 15px 0px !important;
 }
-
+@media screen and (max-width: 767px) {
+    .product-padding {
+        padding: 0px !important;
+    }
+}
 
 /* project */
 
@@ -501,11 +514,14 @@ body {
     background-color: #ffffff;
 }
 .project-head-block {
-    max-width: 1200px;
+    position: relative;
+    max-width: 1160px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin: 0 auto;
     padding: 20px 0px;
 }
-.project-head-left i {
+.project-head .fa-truck {
     float: left;
     font-family: FontAwesome;
     color: rgb(88, 88, 90);
@@ -515,8 +531,9 @@ body {
     text-align: left;
     text-decoration: none;
     box-sizing: border-box;
+    padding: 0px !important;
 }
-.project-head-left h3 {
+.project-head h3 {
     float: left;
     font-family: BPGBannerCaps;
     color: rgb(88, 88, 90);
@@ -527,7 +544,8 @@ body {
     box-sizing: border-box;
     padding-left: 15px;
 }
-.project-head-right i {
+.project-head .fa-angle-right,
+.project-head .fa-angle-left {
     float: right;
     font-family: FontAwesome;
     color: rgb(88, 88, 90);
@@ -539,7 +557,12 @@ body {
     box-sizing: border-box;
     font-weight: 900;
 }
-.project-head-right a {
+.project-head-right {
+    display: block;
+    position: absolute;
+    right: 0px;
+}
+.project-head a {
     float: right;
     font-size: 18px;
     font-family: BPGBannerCaps;
@@ -548,7 +571,9 @@ body {
     padding: 10px 20px;
 }
 .project-body-block {
-    max-width: 1210px;
+    max-width: 1170px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin: 0 auto;
 }
 .project-body {
@@ -602,7 +627,133 @@ body {
     background-color: rgba(255, 255, 255, 0.6 );
 }
 .footer {
-    max-width: 1200px;
+    max-width: 1160px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin: 0 auto;
     padding-top: 25px;
+}
+
+/* responsive */ 
+
+@media screen and (max-width: 767px) {
+    .product-list p {
+        transform: translateY(0%);
+    }
+    .number-background {
+        display: none;
+    }
+    .project-head-block {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0px;
+    }
+    .project-head {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        box-sizing: border-box;
+    }
+    .project-head-right {
+        right: 20px;
+    }
+    .project-head .fa-truck {
+        float: left;
+        font-family: FontAwesome;
+        color: rgb(88, 88, 90);
+        font-size: 20px;
+        font-style: normal;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 900;
+        line-height: 22px;
+        padding: 1.5px 5px 3px 0px !important;
+    }
+    .project-head .fa-angle-right,
+    .project-head .fa-angle-left {
+        float: right;
+        font-family: FontAwesome;
+        color: rgb(88, 88, 90);
+        font-size: 24px;
+        font-style: normal;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 900;
+        line-height: 22px;
+        padding: 3px 5px !important;
+    }
+    .project-head h3 {
+        float: left;
+        font-family: BPGBannerCaps;
+        color: rgb(88, 88, 90);
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        line-height: 20px;
+        padding: 3px 0px 3px 0px !important;
+    }
+    .project-head a {
+        float: right;
+        font-family: BPGBannerCaps;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 4px;
+        background-color: #ed1c24;
+    }
+    .project img {
+        padding: 0px !important;
+    }
+    .pathers-arrow {
+        display: block !important;
+        font-size: 40px !important;
+        width: 40px !important;
+    }
+    .pathers-arrow-left {
+        left: 0px !important;
+    }
+    .pathers-arrow-right {
+        right: 0px !important;
+    }
+    .footer {
+        padding-top: 20px;
+    }
+}
+
+
+
+
+.side-bar-head i {
+    float: left;
+    font-family: FontAwesome;
+    color: rgb(88, 88, 90);
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 900;
+}
+.side-bar-head h3 {
+    float: left;
+    font-family: BPGBannerCaps;
+    color: rgb(88, 88, 90);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 5px;
+}
+.side-bar-head a {
+    float: right;
+    font-family: BPGBannerCaps;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 5px;
+    background-color: #ed1c24;
 }
