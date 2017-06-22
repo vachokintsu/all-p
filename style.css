@@ -721,39 +721,3 @@ body {
         padding-top: 20px;
     }
 }
-
-
-
-
-.side-bar-head i {
-    float: left;
-    font-family: FontAwesome;
-    color: rgb(88, 88, 90);
-    font-size: 20px;
-    font-style: normal;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px;
-    font-weight: 900;
-}
-.side-bar-head h3 {
-    float: left;
-    font-family: BPGBannerCaps;
-    color: rgb(88, 88, 90);
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0;
-    padding: 5px;
-}
-.side-bar-head a {
-    float: right;
-    font-family: BPGBannerCaps;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0;
-    padding: 5px;
-    background-color: #ed1c24;
-}
