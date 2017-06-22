@@ -637,6 +637,26 @@ body {
 /* responsive */ 
 
 @media screen and (max-width: 767px) {
+    .slider {
+        margin-top: 10px;
+        height: 200px;
+    }
+    .slider .uk-slidenav-position,
+    .slider .uk-slideshow,
+    .slider .uk-slideshow li,
+    .slider .uk-slideshow li img {
+        height: 140px !important;
+    }
+    .slider-dot {
+        margin-top: 52.5px !important;
+    }
+    .slider-dot ul {
+        margin: 0 auto !important;
+        justify-content: center !important;
+    }
+    .uk-dotnav a {
+        height: 10px;
+    }
     .product-list p {
         transform: translateY(0%);
     }
